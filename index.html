@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="contenedor">
+        <h1 class="titulo">Encriptador de Texto</h1>
+        <div class="hero">
+            <input class="hero__text hero__ingresar" type="text" name="textoIngresar" id="textoIngresar">
+            <input class="hero__text hero__salida" type="text" name="textoSalida" id="textoSalida">
+            <button class="btn btn__encriptar" onclick="Encriptar()">Encriptar</button>
+            <button class="btn btn__desencriptar" onclick="Desencriptar()">Desencriptar</button>
+            <button class="btn btn__copiar" onclick="Copiar()" id="btnCopiar">Copiar Texto</button>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

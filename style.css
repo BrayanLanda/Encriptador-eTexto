@@ -1,0 +1,113 @@
+body {
+    background: url(./img/fondo.jpg) no-repeat;
+}
+
+
+/* titulos*/
+
+.titulo {
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+
+/* Contenedor hero*/
+
+.contenedor {
+    max-width: 900px;
+    margin: 100px auto;
+    display: grid;
+    justify-content: center;
+}
+
+.hero {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    place-content: center;
+}
+
+.hero__text {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    border: none;
+    box-shadow: 1px -2px 26px 6px rgba(14, 27, 112, 1);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.hero__ingresar {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.hero__salida {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+
+/* botones */
+
+.btn {
+    background-color: black;
+    color: antiquewhite;
+    box-shadow: 1px -2px 26px 6px rgba(14, 27, 112, 1);
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    width: 80%;
+    cursor: pointer;
+    border: none;
+}
+
+.btn__encriptar:hover {
+    background-color: rgb(28, 26, 26);
+}
+
+.btn__desencriptar:hover {
+    background-color: rgb(28, 26, 26);
+}
+
+.btn__copiar:hover {
+    background-color: rgb(28, 26, 26);
+}
+
+
+/* media queries*/
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .hero__ingresar {
+        grid-column: 1 / 3;
+    }
+    .hero__salida {
+        grid-column: 1 / 3;
+        grid-row: 4 / 6;
+    }
+    .btn__encriptar {
+        grid-column: 1 / 3;
+    }
+    .btn__desencriptar {
+        grid-column: 1 / 3;
+    }
+    .btn__copiar {
+        grid-column: 1 / 3;
+    }
+}
+
+@media(max-width: 480px) {
+    .contenedor {
+        max-width: 100%;
+    }
+}
